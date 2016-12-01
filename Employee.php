@@ -1,5 +1,11 @@
 <?php
-class Employee {
+interface IEmployee {
+    public function getName();
+    public function getSalary();
+    public function displayEmployee();
+}
+
+class Employee implements IEmployee {
     var $name;
     var $salary;
 
@@ -35,7 +41,7 @@ class Employee {
     }
 
     public function displayEmployee() {
-		print(nl2br($this.PHP_EOL));
+        print(nl2br($this.PHP_EOL));
     }
 }
 
@@ -47,3 +53,4 @@ function main() {
 }
 
 main();
+?>
