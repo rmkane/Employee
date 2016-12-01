@@ -35,7 +35,7 @@ class Employee {
     }
 
     public function displayEmployee() {
-		print(nl2br($this.PHP_EOL));
+        print(nl2br($this.PHP_EOL));
     }
 }
 
